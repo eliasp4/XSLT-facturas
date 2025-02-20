@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fe="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml">
+   <head>
+      <title>Factura</title>
+      <style type="text/css">
+          body { font-family: sans-serif; }
+          .invoice { width: 80%; margin: 20px auto; border: 1px solid #ccc; padding: 20px; }
+          .header { text-align: center; margin-bottom: 20px; }
+          .seller, .buyer { margin-bottom: 10px; }
+          .items { width: 100%; border-collapse: collapse; }
+          .items th, .items td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+          .totals { margin-top: 20px; text-align: right; }
+        </style>
+   </head>
+   <body>
+      <div class="invoice">
+         <div class="header">
+            <h1>Factura</h1>
+         </div>
+         <div class="seller">
+            <h2>Emisor</h2>
+            <p>
+               <strong>Nombre:</strong>Empresa Vendedora, S.A.</p>
+            <p>
+               <strong>CIF:</strong>ES12345678</p>
+            <p>
+               <strong>Dirección:</strong>Calle Ejemplo, 123,
+              Ciudad,
+              12345</p>
+         </div>
+         <div class="buyer">
+            <h2>Receptor</h2>
+            <p>
+               <strong>Nombre:</strong>Cliente Comprador, S.L.</p>
+            <p>
+               <strong>CIF:</strong>ES87654321</p>
+            <p>
+               <strong>Dirección:</strong>Calle Otra, 456,
+              Otra Ciudad,
+              67890</p>
+         </div>
+         <div class="details">
+            <p>
+               <strong>Número de Factura:</strong>1234</p>
+            <p>
+               <strong>Fecha de Emisión:</strong>2024-02-14</p>
+         </div>
+         <div>
+            <h2>Detalles de la Factura</h2>
+            <table class="items">
+               <thead>
+                  <tr>
+                     <th>Descripción</th>
+                     <th>Cantidad</th>
+                     <th>Precio Unitario</th>
+                     <th>Importe</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Producto 1</td>
+                     <td>2</td>
+                     <td>10.00</td>
+                     <td>20.00</td>
+                  </tr>
+                  <tr>
+                     <td>Producto 2</td>
+                     <td>1</td>
+                     <td>30.00</td>
+                     <td>30.00</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="totals">
+            <p>
+               <strong>Total Bruto:</strong>50.00</p>
+            <p>
+               <strong>Total IVA:</strong>10.50</p>
+            <p>
+               <strong>Total Factura:</strong>60.50</p>
+         </div>
+      </div>
+   </body>
+</html>

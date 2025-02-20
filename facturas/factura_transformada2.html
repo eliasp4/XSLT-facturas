@@ -1,0 +1,82 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fe="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml" lang="es">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Factura - Estilo 2</title>
+      <style>
+                    body { font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 20px; }
+                    .invoice { max-width: 800px; margin: 0 auto; background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+                    .header { background-color: #4a4a4a; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+                    .header h1 { margin: 0; }
+                    .parties { display: flex; justify-content: space-between; padding: 20px; }
+                    .party { width: 45%; }
+                    .party h2 { color: #4a4a4a; border-bottom: 2px solid #4a4a4a; padding-bottom: 5px; }
+                    .details { background-color: #e9e9e9; padding: 20px; }
+                    .items { width: 100%; border-collapse: collapse; margin-top: 20px; }
+                    .items th { background-color: #4a4a4a; color: white; }
+                    .items th, .items td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+                    .totals { background-color: #4a4a4a; color: white; padding: 20px; text-align: right; }
+                </style>
+   </head>
+   <body>
+      <div class="invoice">
+         <div class="header">
+            <h1>FACTURA</h1>
+            <div>
+               <p>Nº: 1234</p>
+               <p>Fecha: 2024-02-14</p>
+            </div>
+         </div>
+         <div class="parties">
+            <div class="party">
+               <h2>Emisor</h2>
+               <p>Empresa Vendedora, S.A.</p>
+               <p>CIF: ES12345678</p>
+               <p>Calle Ejemplo, 123</p>
+               <p>12345, Ciudad</p>
+            </div>
+            <div class="party">
+               <h2>Receptor</h2>
+               <p>Cliente Comprador, S.L.</p>
+               <p>CIF: ES87654321</p>
+               <p>Calle Otra, 456</p>
+               <p>67890, Otra Ciudad</p>
+            </div>
+         </div>
+         <div class="details">
+            <h2>Detalles de la Factura</h2>
+            <table class="items">
+               <thead>
+                  <tr>
+                     <th>Descripción</th>
+                     <th>Cantidad</th>
+                     <th>Precio Unitario</th>
+                     <th>Importe</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Producto 1</td>
+                     <td>2</td>
+                     <td>10.00</td>
+                     <td>20.00</td>
+                  </tr>
+                  <tr>
+                     <td>Producto 2</td>
+                     <td>1</td>
+                     <td>30.00</td>
+                     <td>30.00</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="totals">
+            <p>Total Bruto: 50.00</p>
+            <p>Total IVA: 10.50</p>
+            <p>Total Factura: 60.50</p>
+         </div>
+      </div>
+   </body>
+</html>
