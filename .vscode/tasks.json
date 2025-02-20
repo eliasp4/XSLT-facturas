@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "process",
+            "label": "XSLT Transform",
+            "command": "java",
+            "args": [
+                "-cp",
+                "C:\\Saxon\\saxon-he-12.5.jar;C:\\Saxon\\xmlresolver-5.1.1.jar",
+                "net.sf.saxon.Transform",
+                "-s:${workspaceFolder}\\factura_tarea.xml",
+                "-xsl:${workspaceFolder}\\factura_tarea_estilo2.xsl",
+                "-o:${workspaceFolder}\\factura_tarea_transformada2.html"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
