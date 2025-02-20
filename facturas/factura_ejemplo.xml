@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Facturae xmlns="http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml">
+  <FileHeader>
+    <SchemaVersion>3.2.2</SchemaVersion>
+    <Modality>I</Modality>
+    <InvoiceIssuerType>EM</InvoiceIssuerType>
+  </FileHeader>
+  <Parties>
+    <SellerParty>
+      <TaxIdentification>
+        <TaxIdentificationNumber>ES12345678</TaxIdentificationNumber>
+      </TaxIdentification>
+      <LegalEntity>
+        <CorporateName>Empresa Vendedora, S.A.</CorporateName>
+        <Address>
+          <StreetName>Calle Ejemplo, 123</StreetName>
+          <City>Ciudad</City>
+          <PostCode>12345</PostCode>
+          <Province>Provincia</Province>
+        </Address>
+      </LegalEntity>
+    </SellerParty>
+    <BuyerParty>
+      <TaxIdentification>
+        <TaxIdentificationNumber>ES87654321</TaxIdentificationNumber>
+      </TaxIdentification>
+      <LegalEntity>
+        <CorporateName>Cliente Comprador, S.L.</CorporateName>
+        <Address>
+          <StreetName>Calle Otra, 456</StreetName>
+          <City>Otra Ciudad</City>
+          <PostCode>67890</PostCode>
+          <Province>Otra Provincia</Province>
+        </Address>
+      </LegalEntity>
+    </BuyerParty>
+  </Parties>
+  <Invoices>
+    <Invoice>
+      <InvoiceHeader>
+        <InvoiceNumber>1234</InvoiceNumber>
+        <InvoiceSeries>A</InvoiceSeries>
+        <InvoiceIssueDate>2024-02-14</InvoiceIssueDate>
+      </InvoiceHeader>
+      <InvoiceBody>
+        <InvoiceLine>
+          <ItemDescription>Producto 1</ItemDescription>
+          <Quantity>2</Quantity>
+          <UnitPrice>10.00</UnitPrice>
+          <LineItemAmount>20.00</LineItemAmount>
+        </InvoiceLine>
+        <InvoiceLine>
+          <ItemDescription>Producto 2</ItemDescription>
+          <Quantity>1</Quantity>
+          <UnitPrice>30.00</UnitPrice>
+          <LineItemAmount>30.00</LineItemAmount>
+        </InvoiceLine>
+      </InvoiceBody>
+      <InvoiceTotals>
+        <TotalGrossAmount>50.00</TotalGrossAmount>
+        <TotalGeneralTax>10.50</TotalGeneralTax>
+        <TotalInvoiceAmount>60.50</TotalInvoiceAmount>
+      </InvoiceTotals>
+    </Invoice>
+  </Invoices>
+</Facturae>
