@@ -9,31 +9,6 @@ Este proyecto demuestra cómo usar XSLT para transformar facturas XML en documen
 - Visual Studio Code
 - Extensión XSLT/XPath para Visual Studio Code
 
-## Estructura del Proyecto
-
-proyecto/
-│
-├── facturas/
-│   └── factura_ejemplo.xml
-│
-├── estilos/
-│   ├── factura.xsl
-│   └── factura_estilo2.xsl
-│
-├── lib/
-│   ├── saxon-he-12.5.jar
-│   └── xmlresolver-5.1.1.jar
-│
-├── assets/
-│   ├── fonts/
-│   │   └── tu_fuente.ttf
-│   └── images/
-│       └── logo.png
-│
-└── .vscode/
-    └── tasks.json
-
-
 ## Configuración
 
 1. Descarga Saxon-HE y xmlresolver de sus respectivos sitios web oficiales.
@@ -64,6 +39,26 @@ Si encuentras errores relacionados con clases no encontradas, asegúrate de que 
 
 Siéntete libre de fork este repositorio y enviar pull requests con mejoras o nuevos estilos de factura.
 
-## Licencia
+## Estructura del Proyecto
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+```proyecto/
+│
+├── facturas/
+│   └── factura_ejemplo.xml
+│
+├── estilos/
+│   ├── factura.xsl
+│   └── factura_estilo2.xsl
+│
+├── lib/
+│   ├── saxon-he-12.5.jar
+│   └── xmlresolver-5.1.1.jar
+│
+├── assets/
+│   ├── fonts/
+│   │   └── tu_fuente.ttf
+│   └── images/
+│       └── logo.png
+│
+└── .vscode/
+    └── tasks.json
