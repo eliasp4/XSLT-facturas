@@ -93,7 +93,7 @@
                             <h1>Factura Electrónica</h1>
                             <h2>FacturaE 3.2.2</h2>
                         </div>
-                        <img src="descarga.jpg" alt="Logo Empresa"/>
+                        <img src="logo.jpg" alt="Logo Empresa"/>
                     </div>
 
                     <!-- Información del Encabezado -->
